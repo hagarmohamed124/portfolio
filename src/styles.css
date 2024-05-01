@@ -1,0 +1,321 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body {
+    /* background-color:#1691e368; */
+    background-image: url('../src/assets/R.jpeg');
+    /* font-family:  "Montserrat", sans-serif; */
+    font-family: "PT Serif", serif;
+    cursor: pointer;
+}
+:root{
+    --tui-base-01: #fff;
+    --tui-link-night-hover: #0050d3;
+    --main-color:#0D6EFD;
+    --secondary-color:color: rgb(78, 89, 92);
+}
+
+html{
+    height: 100vh;
+}
+
+
+.icons {
+    font-size: 20px;
+}
+
+.icons a:hover i{
+
+    color:var(--main-color);
+}
+
+.scroll-div {
+    width: 400px;
+    height: 97vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.edu-sec{
+    height: 122px;
+}
+
+.edu-sec img {
+    padding-left: 14px;
+}
+.sha-div {
+    line-height: 0.8;
+ 
+}
+.nti-div{
+    padding-left:  7px;
+}
+.first-p {
+    position: relative;
+}
+.overlay{
+    background-color: #00000096;
+    position: absolute;
+    top: 100;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    transition: height  600ms  ease-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 120px;
+    padding-right: 120px;
+    overflow: hidden;
+}
+
+
+.details{
+    font-size: 13.5px;
+    color: rgb(78, 89, 92);
+}
+
+
+.overlay a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#fff;
+}
+
+.overlay a:hover{
+    background-color: #eeeff0;
+}
+
+.first-p:hover .overlay{
+    height: 100%;
+   
+}
+
+
+.first-p img {
+width: 100%;
+}
+
+.title {
+    color:var(--main-color);
+    font-family: "Chakra Petch", sans-serif;
+    margin-top: 7px;
+}
+
+h5 {
+    color:var(--main-color);
+}
+
+.border-black {
+    border-bottom: 4px solid ;
+}
+.bgDenger{
+    color:red;
+}
+
+ i ,  .contact-det span ,.contact-det a  {
+color:var(--main-color);
+}
+
+
+.progress-container {
+    margin-bottom: 10px;
+  }
+
+
+  #about-sec .progress-bar {
+  position: relative;
+  width: 100%;
+   
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    text-align: start;
+
+  }
+
+  #about-sec .progress-bar span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%; 
+  color: white; 
+  font-weight: 200; 
+  font-size: 13px;
+line-height: 1.7;
+ text-align: center;
+  border-radius: 5px;
+background-color:#000;
+  transition: width .5s linear;
+  }
+
+  #about-sec .progress-bar h6 {
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    margin: 6px;
+ 
+  }
+  
+
+
+  #about-sec .progress-bar span:after {
+    content: attr(data-width);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+  }
+
+
+  /* .progress-bar */
+
+  .progressBar li {
+    width: 50%;
+    float: left;
+    list-style-type: none;
+    padding-right: 5.3333333%;
+}
+
+.progressBar p{
+ margin-bottom: 0;
+ 
+
+}
+
+/* .boostrapBar{
+font-size: small;
+} */
+
+.progressBar li:nth-child(even) {
+    margin-bottom: 5em;
+}
+
+.progressBar h2 {
+    margin: 0 0 1.5em;
+    border-bottom: 1px solid #ccc;
+    padding: 0 0 .25em;
+}
+
+
+progress[value] {
+    /* Get rid of the default appearance */
+    appearance: none;
+    /* This unfortunately leaves a trail of border behind in Firefox and Opera. We can remove that by setting the border to none. */
+    border: none;
+    /* Add dimensions */
+    width: 100%;
+    height: 20px;
+    /* Although firefox doesn't provide any additional pseudo class to style the progress element container, any style applied here works on the container. */
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+    /* Of all IE, only IE10 supports progress element that too partially. It only allows to change the background-color of the progress value using the 'color' attribute. */
+    color: royalblue;
+    position: relative;
+    margin: 0 0 1.5em;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+}
+
+progress[value]::-webkit-progress-value {
+    position: relative;
+    background-size: 35px 20px, 100% 100%, 100% 100%;
+    border-radius:3px;
+    /* Let's animate this */
+    animation: animate-stripes 5s linear infinite;
+}
+
+@keyframes animate-stripes { 100% { background-position: -100px 0; } }
+
+progress[value]::-webkit-progress-value:after {
+    /* Only webkit/blink browsers understand pseudo elements on pseudo classes. A rare phenomenon! */
+    content: '';
+    position: absolute;
+    width:5px;
+    height:5px;
+    top:7px;
+    right:7px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+
+
+.progress-bar {
+    background-color: whiteSmoke;
+    border-radius: 3px;
+    box-shadow: 0 2px 3px rgba(0,0,0,.5) inset;
+    width: 100%;
+    height:20px;
+}
+
+.progress-bar span {
+    background-color: rgb(242, 243, 244);
+    border-radius: 3px;
+    display: block;
+    text-indent: -9999px;
+}
+
+p[data-value] {
+    position: relative;
+}
+
+p[data-value]:after {
+    content: attr(data-value) '%';
+    position: absolute;
+    right:0;
+}
+
+.barColor::-webkit-progress-value,
+.python::-webkit-progress-value {
+    /* Gradient background with Stripes */
+    background-image:
+    -webkit-linear-gradient( 135deg,
+                             transparent,
+                             transparent 33%,
+                             rgba(255, 255, 255, 0.1) 33%,
+                             rgba(0,0,0,.1) 66%,
+                             transparent 66%),
+      -webkit-linear-gradient( top,
+                              rgba(255, 255, 255, .25),
+                              rgba(254, 254, 254, 0.2)),
+       -webkit-linear-gradient( left, #09c, var(--main-color));
+}
+  /* End .progress-bar */
+  /* rgba(0,0,0,.2)), */
+
+
+ .email{
+    text-decoration: none;
+  
+ }
+ .projectList a{
+    color: #000;
+ }
+
+ .mainList a{
+    font-size: 17px;
+ }
+ .user {
+    font-size: 22px;
+ }
+ .mainMarg {
+    margin-right: 40px;
+    margin-left: 70px;
+ }
