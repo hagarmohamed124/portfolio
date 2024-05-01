@@ -5,7 +5,7 @@
 
 body {
     /* background-color:#1691e368; */
-    background-image: url('../src/assets/R.jpeg');
+    background-image: url('./assets/images/R.jpeg');
     /* font-family:  "Montserrat", sans-serif; */
     font-family: "PT Serif", serif;
     cursor: pointer;
