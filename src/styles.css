@@ -38,12 +38,13 @@ html{
     overflow-y: scroll;
 }
 
+
 .all-scroll{
     overflow: hidden;
     overflow-y: scroll;
-    height: 80vh;
+    height: 60vh;
+    color: aqua;
 }
-
 
 .edu-sec{
     height: 122px;
